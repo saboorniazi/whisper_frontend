@@ -53,7 +53,7 @@ export default function AudioRecorder() {
     formData.append("file", audioBlob, "recording.webm");
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/upload-audio", {
+      const res = await fetch("https://1be8-124-29-216-114.ngrok-free.app/upload-audio", {
         method: "POST",
         body: formData,
       });
